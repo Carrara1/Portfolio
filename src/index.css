@@ -1,26 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 /* Reset some default browser styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol {
-  margin: 0;
-  padding: 0;
-  background-color: #2c2c2c;
-
-
+:root {
+  --color-primary: #e9724c;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #e9724c;
+  --color-primary-darker: #e9724c;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #06bee1, #1768ac);
+  --gradient-secondary: linear-gradient(to top left, #e9724c, #c5283d);
+  --background-color: #19212D;
+  --light-color: #ddd;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: inherit;
+}
+
+
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  }
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #19212D;
+  line-height: 1.9;
+  background-color: #ddd;
+}
+.navbar{
+  background-color: #19212D;
+  padding: 10;
+  margin: 0;
+}
 
+.navbar-brand{
+  font-size: 20px;
+  color: #19212D;
+  font-weight: bold;
+  margin-left: 20px;
+}
 
-
-
-
-/* Style the navbar *
-
-
-/
-
-
+.btn-outline-dark {
+  color: #19212D;
+  border-color: #19212D;
+  font-weight: bold;
+}
+.navbar.bg-custom {
+  background-color: #ddd; /* Change to your desired background color */
+}
 
 

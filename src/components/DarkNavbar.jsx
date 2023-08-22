@@ -12,15 +12,15 @@ function DarkNavbar() {
 
 	return (
 		<>
-			<Navbar fixed="top" bg="dark" data-bs-theme="dark">
-				<Navbar.Brand>Brand text</Navbar.Brand>
+			<Navbar fixed="top" bg="custom" data-bs-theme="light">
+				<Navbar.Brand> Joao Test</Navbar.Brand>
 
 				<Button
 					className="ms-auto "
-					variant="outline-light"
+					variant="outline-dark"
 					onClick={handleShow}
 				>
-					Launch
+					. . .
 				</Button>
 
 				<Offcanvas show={show} onHide={handleClose} placement="end">
