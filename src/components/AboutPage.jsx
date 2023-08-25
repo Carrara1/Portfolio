@@ -2,8 +2,7 @@ const AboutPage = () => {
 	return (
 		<div className="about-page">
 			<div className="bio">
-				<h2>Lorem Ipsum</h2>
-				<p>Test</p>
+				<h2 id="about">Lorem Ipsum</h2>
 			</div>
 		</div>
 	);

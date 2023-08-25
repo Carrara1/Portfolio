@@ -57,19 +57,20 @@ body {
 }
 
 
+.home-page {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10rem;
+  height: 100vh; /* Adjust as needed */
+}
+
 .about-page {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
   height: 100vh; /* Adjust as needed */
-}
-
-.profile-picture img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 20px;
 }
 
 .centered-button {

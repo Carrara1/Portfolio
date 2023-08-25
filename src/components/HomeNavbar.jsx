@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useRef } from "react";
+
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Modal from "react-bootstrap/Modal";
@@ -11,6 +13,12 @@ function HomeNavbar() {
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
+	const ref = useRef(null);
+
+	const scrollToTop = () => {
+		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+	};
+
 	const handleBrandClick = () => {
 		setClickCount(clickCount + 1);
 
@@ -26,7 +34,7 @@ function HomeNavbar() {
 	return (
 		<>
 			<Navbar fixed="top" bg="custom" data-bs-theme="light">
-				<Navbar.Brand onClick={handleBrandClick}> J </Navbar.Brand>
+				<Navbar.Brand onClick={handleBrandClick}> J.C. </Navbar.Brand>
 				<Modal
 					show={showModal}
 					onHide={handleCloseModal}
@@ -39,10 +47,14 @@ function HomeNavbar() {
 					<Modal.Body>Congrats, you found the easteregg!</Modal.Body>
 				</Modal>
 
-				<Button className="ms-auto" variant="">
+				<Button ref={ref} onClick={scrollToTop} className="ms-auto" variant="">
 					Home
 				</Button>
-				<Button className="nav-buttons" variant="">
+				<Button
+					onClick={() => window.location.replace("#about")}
+					className="nav-buttons"
+					variant=""
+				>
 					About
 				</Button>
 				<Button className="nav-buttons" variant="">
