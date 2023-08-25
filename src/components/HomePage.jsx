@@ -6,7 +6,7 @@ const HomePage = () => {
 			<div className="bio">
 				<p>Hey, Test</p>
 				<h2>Lorem Ipsum</h2>
-				<Button variant="dark">Get in touch</Button>
+				<Button variant="dark">Download CV</Button>
 			</div>
 		</div>
 	);
