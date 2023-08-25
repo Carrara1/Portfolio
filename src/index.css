@@ -50,9 +50,31 @@ body {
   color: #19212D;
   border-color: #19212D;
   font-weight: bold;
+  margin-right: 20px;
 }
 .navbar.bg-custom {
   background-color: #ddd; /* Change to your desired background color */
 }
 
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.centered-button {
+  margin: 0 10px;
+  display: flex;
+  align-items: center; /* Add some space between buttons */
+}
 

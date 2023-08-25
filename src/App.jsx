@@ -1,12 +1,12 @@
-import DarkNavbar from "./components/DarkNavbar";
+import HomeNavbar from "./components/HomeNavbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import About from "./components/About";
+import AboutPage from "./components/AboutPage";
 
 function App() {
 	return (
 		<>
-			<DarkNavbar />
-			<About />
+			<HomeNavbar />
+			<AboutPage />
 		</>
 	);
 }
