@@ -69,7 +69,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  background-color: #19212D;
+  color: #ddd;
   height: 100vh; /* Adjust as needed */
 }
 
