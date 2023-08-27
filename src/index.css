@@ -34,14 +34,14 @@ body {
   background-color: #ddd;
 }
 .navbar{
-  background-color: #19212D;
+  background-color: #ddd;
   padding: 10;
   margin: 0;
 }
 
 .navbar-brand{
   font-size: 20px;
-  color: #19212D;
+  color: #048e24;
   font-weight: bold;
   margin-left: 20px;
 }
@@ -59,10 +59,10 @@ body {
 
 .home-page {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding-left: 10rem;
   height: 100vh; /* Adjust as needed */
+  
 }
 
 .about-page {
@@ -78,5 +78,36 @@ body {
   margin: 0 10px;
   display: flex;
   align-items: center; /* Add some space between buttons */
+}
+
+
+.h1-home {
+  font-size: 1.2rem;
+}
+.h2-home {
+  color: #048e24;
+  font-size: 3.5rem;
+}
+
+.h3-home {
+  color: #048e24;
+  font-size: 1.8rem;
+}
+
+
+.projects-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19212D;
+  color: #ddd;
+  height: 100vh; /* Adjust as needed */
+}
+
+.h1-about {
+  font-size: 2rem;
+}
+.h2-about {
+  font-size: 1.2rem;
 }
 

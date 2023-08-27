@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -33,7 +32,7 @@ function HomeNavbar() {
 
 	return (
 		<>
-			<Navbar fixed="top" bg="custom" data-bs-theme="light">
+			<Navbar fixed="top" data-bs-theme="light">
 				<Navbar.Brand onClick={handleBrandClick}> J.C. </Navbar.Brand>
 				<Modal
 					show={showModal}
@@ -42,7 +41,7 @@ function HomeNavbar() {
 					keyboard={false}
 				>
 					<Modal.Header closeButton>
-						<Modal.Title>EasterEggL</Modal.Title>
+						<Modal.Title>EasterEgg</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>Congrats, you found the easteregg!</Modal.Body>
 				</Modal>
@@ -57,8 +56,12 @@ function HomeNavbar() {
 				>
 					About
 				</Button>
-				<Button className="nav-buttons" variant="">
-					Portfolio
+				<Button
+					onClick={() => window.location.replace("#projects")}
+					className="nav-buttons"
+					variant=""
+				>
+					Projects
 				</Button>
 
 				<Button className="ms-auto" variant="outline-dark" onClick={handleShow}>
