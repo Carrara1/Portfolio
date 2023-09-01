@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Modal from "react-bootstrap/Modal";
@@ -30,13 +29,7 @@ function HomeNavbar() {
 	const handleCloseModal = () => {
 		setShowModal(false);
 	};
-	//
-	const [currentLanguage, setCurrentLanguage] = useState("EN-US");
 
-	const handleLanguageToggle = () => {
-		const newLanguage = currentLanguage === "EN-US" ? "PT-BR" : "EN-US";
-		setCurrentLanguage(newLanguage);
-	};
 	return (
 		<>
 			<Navbar fixed="top" data-bs-theme="light">
@@ -52,26 +45,23 @@ function HomeNavbar() {
 					</Modal.Header>
 					<Modal.Body>Congrats, you found the easteregg!</Modal.Body>
 				</Modal>
-				<Button variant="outline-dark" onClick={handleLanguageToggle}>
-					{currentLanguage === "EN-US" ? "PT-BR " : "EN-US "}
-					{currentLanguage === "EN-US" ? <BsToggleOff /> : <BsToggleOn />}
-				</Button>
+
 				<Button ref={ref} onClick={scrollToTop} className="ms-auto" variant="">
-					{currentLanguage === "EN-US" ? "Home" : "Ínicio"}
+					Home
 				</Button>
 				<Button
 					onClick={() => window.location.replace("#about")}
 					className="nav-buttons"
 					variant=""
 				>
-					{currentLanguage === "EN-US" ? "About" : "Sobre"}
+					About
 				</Button>
 				<Button
 					onClick={() => window.location.replace("#projects")}
 					className="nav-buttons"
 					variant=""
 				>
-					{currentLanguage === "EN-US" ? "Projects" : "Projetos"}
+					Projects
 				</Button>
 
 				<Button className="ms-auto" variant="outline-dark" onClick={handleShow}>
@@ -90,3 +80,9 @@ function HomeNavbar() {
 }
 
 export default HomeNavbar;
+
+//EN US button currently not working yet
+// 				 <Button variant="outline-dark" onClick={handleLanguageToggle}> */
+// {currentLanguage === "EN-US" ? "PT-BR " : "EN-US "}
+// {currentLanguage === "EN-US" ? <BsToggleOff /> : <BsToggleOn />}
+// </Button>

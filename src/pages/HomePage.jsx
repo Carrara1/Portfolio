@@ -20,7 +20,12 @@ const HomePage = () => {
 					/>
 				</h3>
 				<br />
-				<Button className="curriculum-btn" role="button">
+				<Button
+					className="curriculum-btn"
+					href="../assets/Curriculum Vitae.pdf"
+					title=""
+					download
+				>
 					<span className="text">Download CV</span>
 				</Button>
 			</div>
