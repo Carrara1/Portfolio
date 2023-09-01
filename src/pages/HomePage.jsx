@@ -5,9 +5,11 @@ const HomePage = () => {
 	return (
 		<div className="home-page">
 			<div className="bio">
-				<h1 className="h1-home">Hey, I am </h1>
+				<h1 className="h1-home">Hey! I am</h1>
 				<h2 className="h2-home">Joao Carrara</h2>
-				<h1 className="h1-home">Full-Stack Developer.</h1>
+				<h1 className="h1-home">
+					Software Developer | Computer Science Student
+				</h1>
 				<h3 className="h3-home">
 					<Typewriter
 						options={{
@@ -17,8 +19,10 @@ const HomePage = () => {
 						}}
 					/>
 				</h3>
-
-				<Button variant="dark">Download CV</Button>
+				<br />
+				<Button className="button-64" role="button">
+					<span className="text">Download CV</span>
+				</Button>
 			</div>
 		</div>
 	);
