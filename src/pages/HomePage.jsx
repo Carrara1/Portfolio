@@ -20,7 +20,7 @@ const HomePage = () => {
 					/>
 				</h3>
 				<br />
-				<Button className="button-64" role="button">
+				<Button className="curriculum-btn" role="button">
 					<span className="text">Download CV</span>
 				</Button>
 			</div>
