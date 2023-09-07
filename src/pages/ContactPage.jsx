@@ -9,10 +9,10 @@ function ContactPage() {
 
 		emailjs
 			.sendForm(
-				process.env.SERVICE_ID,
-				process.env.TEMPLATE_ID,
+				import.meta.env.SERVICE_ID,
+				import.meta.env.TEMPLATE_ID,
 				form.current,
-				process.env.PUBLIC_KEY
+				import.meta.env.PUBLIC_KEY
 			)
 			.then(
 				(result) => {
