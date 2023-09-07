@@ -1,17 +1,13 @@
 import { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
+
 import Modal from "react-bootstrap/Modal";
 import Navbar from "react-bootstrap/Navbar";
 
 function HomeNavbar() {
 	const [clickCount, setClickCount] = useState(0);
 	const [showModal, setShowModal] = useState(false);
-	const [show, setShow] = useState(false);
 
-	const handleClose = () => setShow(false);
-
-	const handleShow = () => setShow(true);
 	const ref = useRef(null);
 
 	const scrollToTop = () => {
@@ -64,16 +60,13 @@ function HomeNavbar() {
 					Projects
 				</Button>
 
-				<Button className="ms-auto" variant="outline-dark" onClick={handleShow}>
-					Contact Me!
+				<Button
+					onClick={() => window.location.replace("#contact")}
+					className="ms-auto"
+					variant="outline-dark"
+				>
+					Contact Me
 				</Button>
-
-				<Offcanvas show={show} onHide={handleClose} placement="end">
-					<Offcanvas.Header closeButton>
-						<Offcanvas.Title>Contact me:</Offcanvas.Title>
-					</Offcanvas.Header>
-					<Offcanvas.Body>Lorem Ipsum</Offcanvas.Body>
-				</Offcanvas>
 			</Navbar>
 		</>
 	);

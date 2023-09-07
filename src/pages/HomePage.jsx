@@ -22,8 +22,8 @@ const HomePage = () => {
 				<br />
 				<Button
 					className="curriculum-btn"
-					href="../assets/Curriculum Vitae.pdf"
-					title=""
+					href="src/assets/CurriculumVitae.pdf"
+					title="Curriculum Vitae"
 					download
 				>
 					<span className="text">Download CV</span>

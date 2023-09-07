@@ -14,7 +14,7 @@
   --color-tertiary-opacity: #ff58602d;
   --gradient-primary: linear-gradient(to top left, #06bee1, #1768ac);
   --gradient-secondary: linear-gradient(to top left, #e9724c, #c5283d);
-  --background-color: #19212D;
+  --background-color: #121212;
   --light-color: #ddd;
 }
 
@@ -51,8 +51,8 @@ body {
 }
 
 .btn-outline-dark {
-  color: #19212D;
-  border-color: #19212D;
+  color: #121212;
+  border-color: #121212;
   font-weight: bold;
   margin-right: 20px;
 }
@@ -109,7 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #19212D;
+ background-color: #121212;
   color: #ddd;
   height: 100vh; /* Adjust as needed */
 }
@@ -131,7 +131,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #19212D;
+  background-color: #121212;
   color: #ddd;
   height: 100vh; /* Adjust as needed */
 }
@@ -139,8 +139,41 @@ body {
 .h1-projects {
   font-size: 4rem;
   background: -webkit-linear-gradient(#2fb74f,#3868e3);
+  text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.projects-card{
+  height: 35rem;
+   width: 17rem;
+   margin: 15px;
+   display: inline-block;
+   border-radius:10px;
+  background-color: #ddd;
+  -webkit-box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
+  -moz-box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
+  box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
+  
+ }
+ 
+ .projects-card-img {
+   width: 100%;
+   margin: auto; 
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+ 
+ .h2-projects {
+  font-size: 2.5rem;
+  background: #121212;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-button {
+  margin: 5px;
 }
 
 
@@ -149,7 +182,7 @@ body {
 
 
 
-/* CSS */
+/* Curriculum */
 .curriculum-btn {
   align-items: center;
   background-image: linear-gradient(144deg,#2fb74f,#3868e3 50%,#00DDEB);
@@ -198,4 +231,16 @@ body {
     font-size: 24px;
     min-width: 196px;
   }
+}
+
+
+
+.contact-page {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  color: #ddd;
+  height: 100vh; /* Adjust as needed */
 }
