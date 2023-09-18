@@ -1,47 +1,19 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import Button from "react-bootstrap/Button";
 
-import Modal from "react-bootstrap/Modal";
 import Navbar from "react-bootstrap/Navbar";
 
 function HomeNavbar() {
-	const [clickCount, setClickCount] = useState(0);
-	const [showModal, setShowModal] = useState(false);
-
 	const ref = useRef(null);
 
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
 
-	const handleBrandClick = () => {
-		setClickCount(clickCount + 1);
-
-		if (clickCount === 10) {
-			setShowModal(true);
-		}
-	};
-
-	const handleCloseModal = () => {
-		setShowModal(false);
-	};
-
 	return (
 		<>
-			<Navbar fixed="top" data-bs-theme="light">
-				<Navbar.Brand onClick={handleBrandClick}> J.C. </Navbar.Brand>
-				<Modal
-					show={showModal}
-					onHide={handleCloseModal}
-					backdrop="static"
-					keyboard={false}
-				>
-					<Modal.Header closeButton>
-						<Modal.Title>EasterEgg</Modal.Title>
-					</Modal.Header>
-					<Modal.Body>Congrats, you found the easteregg!</Modal.Body>
-				</Modal>
-
+			<Navbar fixed="top" className="navbar">
+				<Navbar.Brand> J.C. </Navbar.Brand>
 				<Button ref={ref} onClick={scrollToTop} className="ms-auto" variant="">
 					Home
 				</Button>

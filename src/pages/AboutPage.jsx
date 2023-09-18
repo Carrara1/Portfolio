@@ -1,4 +1,5 @@
-import Button from "react-bootstrap/Button";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 function AboutPage() {
 	return (
@@ -24,11 +25,50 @@ function AboutPage() {
 						but my current focus is on improving my technology skills.
 					</h2>
 					<br />
-					<div>
-						<Button variant="outline-light">Skills</Button>{" "}
-						<Button variant="outline-light">Education</Button>{" "}
-						<Button variant="outline-light">Certification</Button>{" "}
-					</div>
+					<Tabs defaultActiveKey="skils" className="about-tabs">
+						<Tab eventKey="Skills" title="Skills" className="about-tabs-names">
+							<Tab.Content className="skills">
+								<div className="tab-content-skills">React</div>
+								<div className="tab-content-skills">Javascript</div>
+								<div className="tab-content-skills">Python</div>
+								<div className="tab-content-skills">NodeJS</div>
+								<div className="tab-content-skills">HTML / CSS</div>
+								<div className="tab-content-skills">Git</div>
+								<div className="tab-content-skills">GitHub</div>
+							</Tab.Content>
+						</Tab>
+						<Tab
+							eventKey="Education"
+							title="Education"
+							className="about-tabs-names"
+						>
+							<Tab.Content>
+								<div className="education-content">
+									<h1 className="h1-about-2">Academic Formation</h1>
+									<hr />
+									<h2 className="h2-about">Faculdade das Américas</h2>
+									<h3 className="h3-about">
+										Análise e Desenvolvimento de Sistemas / Systems Analysis and
+										Development
+									</h3>
+									<p>2022-2024</p>
+								</div>
+								<br />
+								<div className="education-content">
+									<h1 className="h1-about-2">Complementary Courses</h1>
+									<hr />
+									<h2 className="h2-about">Udemy</h2>
+									<h3 className="h3-about">
+										The Complete 2023 Web Development Bootcamp <br />
+										The Complete JavaScript Course 2023: From Zero to Expert
+										<br /> One Week Python <br />
+										Information Technology Essentials <br />
+										The Git & Github Bootcamp
+									</h3>
+								</div>
+							</Tab.Content>
+						</Tab>
+					</Tabs>
 				</div>
 			</div>
 		</section>

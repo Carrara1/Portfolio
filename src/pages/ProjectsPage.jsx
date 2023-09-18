@@ -3,8 +3,8 @@ import { Row } from "react-bootstrap";
 
 function ProjectsPage() {
 	return (
-		<div className="projects-page">
-			<div className="text" id="projects">
+		<div className="projects-page" id="projects">
+			<div className="text">
 				<h1 className="h1-projects">Projects</h1>
 				<br />
 				<Row>
