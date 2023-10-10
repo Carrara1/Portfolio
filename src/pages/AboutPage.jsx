@@ -23,6 +23,8 @@ function AboutPage() {
 						language in the future,
 						<br />
 						but my current focus is on improving my technology skills.
+						<br />A few of my hobbies are going to the gym and listening to
+						music in my free time.
 					</h2>
 					<br />
 					<Tabs defaultActiveKey="skils" className="about-tabs">

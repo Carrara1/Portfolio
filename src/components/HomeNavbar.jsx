@@ -14,7 +14,13 @@ function HomeNavbar() {
 		<>
 			<Navbar fixed="top" className="navbar">
 				<Navbar.Brand> J.C. </Navbar.Brand>
-				<Button ref={ref} onClick={scrollToTop} className="ms-auto" variant="">
+
+				<Button
+					ref={ref}
+					onClick={scrollToTop}
+					className="nav-buttons"
+					variant=""
+				>
 					Home
 				</Button>
 				<Button
@@ -30,14 +36,6 @@ function HomeNavbar() {
 					variant=""
 				>
 					Projects
-				</Button>
-
-				<Button
-					onClick={() => window.location.replace("#contact")}
-					className="ms-auto"
-					variant="outline-dark"
-				>
-					Contact Me
 				</Button>
 			</Navbar>
 		</>

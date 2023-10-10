@@ -41,19 +41,21 @@ body {
   color:#121212;
   padding: 10;
   margin: 0;
-  
+  justify-content: center;
 
 }
 
 
 
 .navbar-brand{
+  position: fixed;
+  left: 1%;
   font-size: 20px;
   background: -webkit-linear-gradient(#3868e3, #2fb74f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 30px;
   
 
   
@@ -109,12 +111,15 @@ body {
 }
 
 .curriculum-btn {
+
+  justify-content: center;
   display: inline-block;
   text-decoration: none;
-  margin: 10px 0;
+  margin: 0 0;
   letter-spacing: 2px;
   border-radius: 40px;
   background: linear-gradient(90deg, #0162c8, #55e7fc);
+  
 }
 
 
@@ -304,3 +309,49 @@ body {
   padding-top: 1rem;
 }
 
+
+
+/* SCROLL DOWN  ANIMATION*/
+.arrow,
+.arrow:before {
+position: absolute;
+justify-content: center;
+left: 50%;
+
+
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  top: 90%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #121212 solid;
+  border-bottom: 2px #121212 solid;
+
+}
+.arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #121212 solid;
+  border-bottom: 1px #121212 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
