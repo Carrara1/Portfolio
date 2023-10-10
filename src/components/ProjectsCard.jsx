@@ -9,22 +9,22 @@ function ProjectsCard({
 }) {
 	return (
 		<Card className="projects-card">
-			<Card.Img className="projects-card-img" variant="top" src={imgSrc} />
 			<Card.Title>
 				<h2 className="h2-projects">{title}</h2>
 			</Card.Title>
 			<Card.Body>
 				<Card.Text>{description}</Card.Text>
+				<br />
 				<Button
 					className="projects-button"
-					variant="outline-primary"
+					variant="dark"
 					onClick={() => (window.location.href = githubLink)}
 				>
 					Github
 				</Button>
 				<Button
 					className="projects-button"
-					variant="outline-primary"
+					variant="dark"
 					onClick={() => (window.location.href = liveDemoLink)}
 				>
 					Live Demo

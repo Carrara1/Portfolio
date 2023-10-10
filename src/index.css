@@ -153,10 +153,11 @@ body {
   align-items: center;
   background-color: #121212;
   color: #ddd;
-  height: 110vh; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
 }
 
 .h1-projects {
+  
   font-size: 4rem;
   background: -webkit-linear-gradient(#2fb74f,#3868e3);
   text-align: center;
@@ -165,36 +166,39 @@ body {
 }
 
 .projects-card{
-  height: 35rem;
-   width: 17rem;
-   margin: 15px;
-   display: inline-block;
-   border-radius:10px;
+  padding-top: 10px;
+  height: 25rem;
+  width: 16rem;
+  margin: 15px;
+  display: inline-block;
+  border-radius:10px;
   background-color: #ddd;
   -webkit-box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
   -moz-box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
   box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
-  
+  align-items: center;
  }
  
- .projects-card-img {
-   width: 100%;
-   margin: auto; 
-   padding-top: 10px;
-   padding-bottom: 10px;
- }
  
  .h2-projects {
-  font-size: 2.5rem;
+  padding-top: 5px;
+  font-size: 2rem;
   background: #121212;
   text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 10px;
 }
 
 .projects-button {
-  margin: 5px;
+  display: inline-block;
+  margin-left: 3px; 
+  margin-right: 3px; 
+  margin-top: 3px;
+  margin-bottom: 3px;
+ 
 }
+
 
 
 

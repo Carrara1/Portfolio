@@ -9,18 +9,15 @@ function ProjectsPage() {
 				<br />
 				<Row>
 					<ProjectsCard
-						imgSrc="src/assets/holder.png"
-						title="Project One"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+						title="Todo App with Go/React"
+						description="This is a simple todo app website made with react and using Go as the backend language."
 						githubLink="https://github.com/"
 						liveDemoLink=""
 					/>
-
 					<ProjectsCard
-						imgSrc="src/assets/holder.png"
-						title="Project Two"
-						description="Another project description here."
-						githubLink="https://github.com/"
+						title="Portfolio Template"
+						description="React-based project where you can use a simplified template to build your own portfolio."
+						githubLink="https://github.com/Carrara1/PortfolioTemplate/"
 						liveDemoLink=""
 					/>
 				</Row>
