@@ -355,3 +355,23 @@ left: 50%;
     transform: translate(-10px, -10px);
   }
 }
+
+
+.social-logo{
+  position: relative;
+  padding-top: 10px;
+  height: 25rem;
+  width: 16rem;
+  color: #121212;
+  margin: 1px;
+  display: inline-block;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  left: 33%;
+  
+
+  
+  
+  
+}

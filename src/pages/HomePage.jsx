@@ -1,5 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Typewriter from "typewriter-effect";
+import SocialButtons from "../components/SocialButtons";
 
 const HomePage = () => {
 	return (
@@ -30,8 +31,9 @@ const HomePage = () => {
 						>
 							<span className="text">Download CV</span>
 						</Button>
+						<br />
+						<SocialButtons />
 					</div>
-					<div className="socials"></div>
 				</div>
 				<a className="arrow" href="#about"></a>
 			</div>
