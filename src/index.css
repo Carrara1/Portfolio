@@ -35,10 +35,10 @@ body {
 }
 
 /* /////  NAVBAR /////  */
-.navbar{
+.navbar {
   background-color: #ddd;
   display: flex;
-  color:#121212;
+  color: #121212;
   padding: 10;
   margin: 0;
   justify-content: center;
@@ -47,7 +47,7 @@ body {
 
 
 
-.navbar-brand{
+.navbar-brand {
   position: fixed;
   left: 1%;
   font-size: 20px;
@@ -56,9 +56,9 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   margin-left: 30px;
-  
 
-  
+
+
 }
 
 .btn-outline-dark {
@@ -66,7 +66,7 @@ body {
   border-color: #121212;
   font-weight: bold;
   margin-right: 20px;
-  
+
 }
 
 
@@ -78,11 +78,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
+  /* Adjust as needed */
   position: relative;
   background-color: #ddd;
   opacity: 1;
-  background-image:  linear-gradient(30deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(150deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(30deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(150deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(60deg, #e1e1e177 25%, transparent 25.5%, transparent 75%, #e1e1e177 75%, #e1e1e177), linear-gradient(60deg, #e1e1e177 25%, transparent 25.5%, transparent 75%, #e1e1e177 75%, #e1e1e177);
+  background-image: linear-gradient(30deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(150deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(30deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(150deg, #e1e1e1 12%, transparent 12.5%, transparent 87%, #e1e1e1 87.5%, #e1e1e1), linear-gradient(60deg, #e1e1e177 25%, transparent 25.5%, transparent 75%, #e1e1e177 75%, #e1e1e177), linear-gradient(60deg, #e1e1e177 25%, transparent 25.5%, transparent 75%, #e1e1e177 75%, #e1e1e177);
   background-size: 38px 67px;
   background-position: 0 0, 0 0, 19px 33px, 19px 33px, 0 0, 19px 33px;
 }
@@ -91,12 +92,14 @@ body {
 .centered-button {
   margin: 0 10px;
   display: flex;
-  align-items: center; /* Add some space between buttons */
+  align-items: center;
+  /* Add some space between buttons */
 }
 
 .h1-home {
   font-size: 1.2rem;
 }
+
 .h2-home {
   font-size: 4.5rem;
   background: -webkit-linear-gradient(#3868e3, #2fb74f);
@@ -119,7 +122,7 @@ body {
   letter-spacing: 2px;
   border-radius: 40px;
   background: linear-gradient(90deg, #0162c8, #55e7fc);
-  
+
 }
 
 
@@ -129,25 +132,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- background-color: #121212;
+  background-color: #121212;
   color: #ddd;
-  height: 110vh; /* Adjust as needed */
+  height: 110vh;
+  /* Adjust as needed */
 }
-.h1-about  {
+
+.h1-about {
   font-size: 4rem;
-  background: -webkit-linear-gradient(#2fb74f,#3868e3);
+  background: -webkit-linear-gradient(#2fb74f, #3868e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.h1-about-2{
+.h1-about-2 {
   font-size: 1.9rem;
 }
+
 .h2-about {
   font-size: 1.3rem;
-  
+
 }
-.h3-about{
+
+.h3-about {
   font-size: 1rem;
 }
 
@@ -158,34 +165,35 @@ body {
   align-items: center;
   background-color: #121212;
   color: #ddd;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
+  /* Adjust as needed */
 }
 
 .h1-projects {
-  
+
   font-size: 4rem;
-  background: -webkit-linear-gradient(#2fb74f,#3868e3);
+  background: -webkit-linear-gradient(#2fb74f, #3868e3);
   text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.projects-card{
+.projects-card {
   padding-top: 10px;
   height: 25rem;
   width: 16rem;
   margin: 15px;
   display: inline-block;
-  border-radius:10px;
+  border-radius: 10px;
   background-color: #ddd;
-  -webkit-box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
-  -moz-box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
-  box-shadow: 10px 10px 15px -1px rgba(54,125,189,0.27);
+  -webkit-box-shadow: 10px 10px 15px -1px rgba(54, 125, 189, 0.27);
+  -moz-box-shadow: 10px 10px 15px -1px rgba(54, 125, 189, 0.27);
+  box-shadow: 10px 10px 15px -1px rgba(54, 125, 189, 0.27);
   align-items: center;
- }
- 
- 
- .h2-projects {
+}
+
+
+.h2-projects {
   padding-top: 5px;
   font-size: 2rem;
   background: #121212;
@@ -197,11 +205,11 @@ body {
 
 .projects-button {
   display: inline-block;
-  margin-left: 3px; 
-  margin-right: 3px; 
+  margin-left: 3px;
+  margin-right: 3px;
   margin-top: 3px;
   margin-bottom: 3px;
- 
+
 }
 
 
@@ -214,7 +222,7 @@ body {
 /* Curriculum */
 .curriculum-btn {
   align-items: center;
-  background-image: linear-gradient(144deg,#2fb74f,#3868e3 50%,#00DDEB);
+  background-image: linear-gradient(144deg, #2fb74f, #3868e3 50%, #00DDEB);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 15px 30px -5px;
@@ -271,24 +279,26 @@ body {
   align-items: center;
   background-color: #121212;
   color: #ddd;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
+  /* Adjust as needed */
 }
 
-.about-tabs{
+.about-tabs {
   display: flex;
   background-color: #121212;
   margin: 2px;
-  
+
 }
-.about-tabs-names{
+
+.about-tabs-names {
   padding-top: 1%;
-  display: flex;  
+  display: flex;
   color: #ddd;
-  
+
 
 }
 
-.skills{
+.skills {
   display: flex;
   flex-wrap: wrap;
 }
@@ -298,11 +308,11 @@ body {
   margin-bottom: 1rem;
   margin-right: 0.5rem;
   font-size: 1rem;
-  background: rgba(153,153,153,.2);
+  background: rgba(153, 153, 153, .2);
   border-radius: 10px;
   font-weight: 400;
   color: #ddd;
-  
+
 }
 
 .education-content {
@@ -314,12 +324,13 @@ body {
 /* SCROLL DOWN  ANIMATION*/
 .arrow,
 .arrow:before {
-position: absolute;
-justify-content: center;
-left: 50%;
+  position: absolute;
+  justify-content: center;
+  left: 50%;
 
 
 }
+
 .arrow {
   width: 40px;
   height: 40px;
@@ -332,7 +343,8 @@ left: 50%;
   border-bottom: 2px #121212 solid;
 
 }
-.arrow:before{
+
+.arrow:before {
   content: '';
   width: 20px;
   height: 20px;
@@ -346,10 +358,12 @@ left: 50%;
   animation-iteration-count: infinite;
   animation-name: arrow;
 }
+
 @keyframes arrow {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: translate(-10px, -10px);
@@ -357,21 +371,19 @@ left: 50%;
 }
 
 
-.social-logo{
+.social-logo {
   position: relative;
-  padding-top: 10px;
-  height: 25rem;
-  width: 16rem;
+  justify-content: center;
   color: #121212;
-  margin: 1px;
+  margin: 6px;
   display: inline-block;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  left: 33%;
-  
+  width: 45px;
+  height: 45px;
 
-  
-  
-  
+
+
+
+
+
 }
