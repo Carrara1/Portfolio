@@ -11,7 +11,7 @@ function ProjectsPage() {
 					<ProjectsCard
 						title="Todo App with Go/React"
 						description="This is a simple todo app website made with react and using Go as the backend language."
-						githubLink="https://github.com/"
+						githubLink="https://github.com/Carrara1/go-react-todoapp"
 						liveDemoLink=""
 					/>
 					<ProjectsCard
