@@ -21,21 +21,21 @@ function HomeNavbar() {
 					className="nav-buttons"
 					variant=""
 				>
-					Home
+					Início
 				</Button>
 				<Button
 					onClick={() => window.location.replace("#about")}
 					className="nav-buttons"
 					variant=""
 				>
-					About
+					Sobre mim
 				</Button>
 				<Button
 					onClick={() => window.location.replace("#projects")}
 					className="nav-buttons"
 					variant=""
 				>
-					Projects
+					Projetos
 				</Button>
 			</Navbar>
 		</>
