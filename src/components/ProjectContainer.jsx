@@ -1,18 +1,15 @@
-function ProjectContainer() {
+function ProjectContainer({ imageSrc, title, text, btnUrl }) {
 	return (
 		<div className="project-container">
-			<img
-				src="src/assets/triplesclone.png"
-				alt="Imagem 1"
-				className="project-image"
-			/>
-			<h2 className="project-title">triplescosmos-clone</h2>
-			<p className="project-text">
-				um clone do website oficial do grupo de K-Pop tripleS, com todas as
-				funcionalidades.
-			</p>
-
-			<button className="project-btn">
+			<img src={imageSrc} alt={title} className="project-image" />
+			<h2 className="project-title">{title}</h2>
+			<p className="project-text">{text}</p>
+			<a
+				href={btnUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				className="project-btn"
+			>
 				<svg
 					width="24"
 					height="24"
@@ -30,7 +27,7 @@ function ProjectContainer() {
 					/>
 				</svg>
 				Acessar
-			</button>
+			</a>
 		</div>
 	);
 }
